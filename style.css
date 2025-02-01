@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f8f9fa 50%, #e9ecef 50%); /* Subtle gradient for the background */
+    background-attachment: fixed; /* Parallax effect */
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for a sleek look */
+    color: white;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background: url('101.jpg') no-repeat center center/cover; /* Background image */
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    background-size: cover; /* Ensure the image covers the full section */
+    position: relative;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text visibility */
+    z-index: 1;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.anime-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.anime-card a {
+    text-decoration: none;  /* Remove underline from the link */
+    color: inherit;         /* Inherit text color from the parent */
+}
+
+.anime-card:hover {
+    opacity: 0.9;  /* Optional: Add a hover effect for the card */
+}
+
+.anime-card {
+    background-color: white;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1rem;
+}
+
+.anime-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.anime-card h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.anime-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+}

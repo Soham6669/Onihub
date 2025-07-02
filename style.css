@@ -7,13 +7,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #f8f9fa 50%, #e9ecef 50%); /* Subtle gradient for the background */
-    background-attachment: fixed; /* Parallax effect */
+    background: linear-gradient(135deg, #f8f9fa 50%, #e9ecef 50%);
+    /* Subtle gradient for the background */
+    background-attachment: fixed;
+    /* Parallax effect */
     color: #333;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for a sleek look */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Slight transparency for a sleek look */
     color: white;
     padding: 1rem 0;
 }
@@ -47,12 +50,23 @@ header ul li a {
     font-size: 1.1rem;
 }
 
+
+.logo {
+    cursor: pointer;
+}
+.logo h1 {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 .hero {
-    background: url('101.jpg') no-repeat center center/cover; /* Background image */
+    background: url('101.jpg') no-repeat center center/cover;
+    /* Background image */
     color: white;
     text-align: center;
     padding: 5rem 0;
-    background-size: cover; /* Ensure the image covers the full section */
+    background-size: cover;
+    /* Ensure the image covers the full section */
     position: relative;
 }
 
@@ -63,7 +77,8 @@ header ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text visibility */
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay to improve text visibility */
     z-index: 1;
 }
 
@@ -101,12 +116,15 @@ h2 {
 }
 
 .anime-card a {
-    text-decoration: none;  /* Remove underline from the link */
-    color: inherit;         /* Inherit text color from the parent */
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: inherit;
+    /* Inherit text color from the parent */
 }
 
 .anime-card:hover {
-    opacity: 0.9;  /* Optional: Add a hover effect for the card */
+    opacity: 0.9;
+    /* Optional: Add a hover effect for the card */
 }
 
 .anime-card {
@@ -132,6 +150,34 @@ h2 {
 .anime-card p {
     font-size: 1rem;
     color: #777;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    padding: 10px 220px;
+    align-items: center;
+
+
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+}
+
+.maps {
+    display: flex;
+    justify-content: left;
+    padding: 20px 20px 20px;
+}
+
+.maps1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 20px;
+    width: 700;
+    height: 500;
 }
 
 footer {
